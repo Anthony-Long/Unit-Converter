@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   margin: 0;
@@ -14,6 +18,18 @@ input {
 
 h1 {
   font-size: 1.75em;
+  text-align: center;
+}
+
+h2 {
+  color: #ccc1ff;
+  font-size: 1.25em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -33,14 +49,50 @@ header input {
   text-align: center;
   font-size: 3.625em;
   padding: 1rem;
-  width: 5rem;
-  height: 3rem;
-  border: 2px solid #b295ff;
+  width: 8rem;
+  height: 5rem;
+  border: 0.125rem solid #b295ff;
   border-radius: 5px;
 }
 
 .convert-style {
+  font-size: 1.5em;
   padding: 0.5rem 1.375rem;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.convert-style:hover {
+  background-color: darkslategrey;
+  color: white;
+  transform: scale(1.1);
+}
+
+.convert-style:active {
+  background-color: white;
+}
+
+/* Measurement Section */
+
+.measurement-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex: 1 1 auto;
+  background-color: #1f2937;
+}
+
+.measure-container {
+  color: white;
+  text-align: center;
+  width: 80%;
+  background-color: #273549;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
